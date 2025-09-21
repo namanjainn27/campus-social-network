@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus Social Network - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #1a237e;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left h2 {
+      font-size: 22px;
+    }
+
+    .nav-right a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-right a:hover {
+      color: #ffeb3b;
+    }
+
+    /* Container */
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .new-post-btn {
+      display: inline-block;
+      background-color: #3949ab;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      transition: background 0.3s;
+    }
+
+    .new-post-btn:hover {
+      background-color: #303f9f;
+    }
+
+    .post {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .post h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .post small {
+      color: #888;
+    }
+
+    .post p {
+      margin-top: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: hsl(48, 24%, 96%);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      header, .container, footer {
+        padding: 10px;
+      }
+      .nav-right a {
+        margin-left: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="nav-left">
+      <h2><i class="fas fa-graduation-cap"></i> Campus Network</h2>
+    </div>
+    <div class="nav-right">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="view_posts.html"><i class="fas fa-list"></i> View Posts</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <a href="create_post.html" class="new-post-btn"><i class="fas fa-plus-circle"></i> Create Post</a>
+     
+    <!-- Main Content -->
+     <div class="container">
+    <a href="admin_panel.html" class="admin-btn"><i class="fas fa-user-shield"></i>Admin Panel</a>
+
+    <style>
+      .admin-btn {
+  background-color: #1a237e;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.admin-btn:hover {
+  background-color: #303f9f;
+}
+    </style>
+<br>
+<br>
+    <!-- Post Example -->
+    <div class="post">
+      <h3>Naman Jain</h3>
+      <small>Posted on June 25, 2025</small>
+      <p>Welcome to our new campus social network! Let's stay connected. 🎉</p>
+    </div>
+
+    <div class="post">
+      <h3>Bhupendra Pawar</h3>
+      <small>Posted on June 26, 2025</small>
+      <p>Excited to share project ideas and college events here! 🚀</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Campus Social Network. All rights reserved.</p>
+   <b><p>| Designed By Naman Jain |</p></b> 
+
+   <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>

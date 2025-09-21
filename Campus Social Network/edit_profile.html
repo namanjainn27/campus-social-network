@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Profile - Campus Social Network</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    body { background-color: #f4f4f4; }
+
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-left h2 { font-size: 22px; }
+    .nav-right a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .nav-right a:hover { color: #ffeb3b; }
+
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .container h1 {
+      text-align: center;
+      color: #1a237e;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #3949ab;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: 100%;
+      margin-top: 15px;
+    }
+    button:hover { background-color: #303f9f; }
+
+    footer {
+      background-color: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    footer a { color: hsl(45, 40%, 98%); text-decoration: none; margin: 0 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="nav-left">
+      <h2><i class="fas fa-graduation-cap"></i> Campus Network</h2>
+    </div>
+    <div class="nav-right">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+  </header>
+
+  <!-- Edit Profile Form -->
+  <div class="container">
+    <h1>Edit Profile</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" value="Naman Jain" required/>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" value="naman@example.com" required/>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile No:</label>
+        <input type="text" id="mobile" name="mobile" value="9876543210" required/>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male" selected>Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">New Password (leave blank to keep existing):</label>
+        <input type="password" id="password" name="password" placeholder="Enter new password"/>
+      </div>
+      <div class="form-group">
+        <label for="photo">Profile Photo:</label>
+        <input type="file" id="photo" name="photo" />
+      </div>
+      <button type="submit"><i class="fas fa-save"></i> Save Changes</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Campus Social Network. All rights reserved.</p>
+   <b><p>| Designed By Naman Jain |</p></b> 
+
+   <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>

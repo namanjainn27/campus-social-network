@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage Users - Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { display: flex; min-height: 100vh; background-color: #f0f2f5; }
+
+    .sidebar {
+      width: 230px;
+      background-color: #1a237e;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 22px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .sidebar a:hover {
+      background-color: #3949ab;
+    }
+
+    .main {
+      margin-left: 230px;
+      padding: 30px;
+      width: 100%;
+    }
+
+    .main h1 {
+      font-size: 26px;
+      color: #1a237e;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #3949ab;
+      color: white;
+    }
+
+    td:last-child {
+      text-align: center;
+    }
+
+    .btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      margin: 2px;
+      color: white;
+    }
+
+    .btn-edit { background-color: #4caf50; }
+    .btn-delete { background-color: #f44336; }
+
+    .btn-edit:hover { background-color: #45a049; }
+    .btn-delete:hover { background-color: #d32f2f; }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+    <a href="manage_users.html"><i class="fas fa-users-cog"></i> Manage Users</a>
+    <a href="view_posts.html"><i class="fas fa-file-alt"></i> View Posts</a>
+    <a href="settings.html"><i class="fas fa-cogs"></i> Settings</a>
+    <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>Manage Users</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll No</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Naman Jain</td>
+          <td>36</td>
+          <td>naman@example.com</td>
+          <td>Male</td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Bhpendra Pawar</td>
+          <td>13</td>
+          <td>bhupendra@example.com</td>
+          <td>Male</td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+          </td>
+        </tr>
+        <!-- More users can be added here -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

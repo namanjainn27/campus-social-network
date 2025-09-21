@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile - Campus Social Network</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    body { background-color: #f4f4f4; }
+
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-left h2 { font-size: 22px; }
+    .nav-right a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .nav-right a:hover { color: #ffeb3b; }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 20px;
+    }
+    .profile-header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #1a237e;
+    }
+    .profile-info h1 { margin: 0; color: #1a237e; }
+    .profile-info p { margin: 5px 0; color: #555; }
+
+    .bio {
+      margin-top: 20px;
+    }
+    .bio h3 { color: #1a237e; margin-bottom: 10px; }
+    .bio p { color: #333; }
+
+    .edit-btn {
+      display: inline-block;
+      background-color: #3949ab;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    .edit-btn:hover { background-color: #303f9f; }
+
+    footer {
+      background-color: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    footer a { color: hsl(53, 29%, 95%); text-decoration: none; margin: 0 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="nav-left">
+      <h2><i class="fas fa-graduation-cap"></i> Campus Network</h2>
+    </div>
+    <div class="nav-right">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+  </header>
+
+  <!-- Profile Content -->
+  <div class="container">
+    <div class="profile-header">
+      <img src="uploads/profile_pics/default.png" alt="Profile Photo" />
+      <div class="profile-info">
+        <h1>Naman Jain</h1>
+        <p>Roll No: 23023C04036</p>
+        <p>Email: nj639412@gmail.com</p>
+        <p>Computer Science, 4th Semester</p>
+        <a href="edit_profile.html" class="edit-btn"><i class="fas fa-edit"></i> Edit Profile</a>
+      </div>
+    </div>
+
+    <div class="bio">
+      <h3>About Me</h3>
+      <p>Hello! I am Naman Jain, currently pursuing a diploma in Computer Science at Government Polytechnic College, Khirsadoh. I love working on tech projects and collaborating with my classmates.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Campus Social Network. All rights reserved.</p>
+   <b><p>| Designed By Naman Jain |</p></b> 
+
+   <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
